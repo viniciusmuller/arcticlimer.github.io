@@ -1,37 +1,8 @@
-import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
+import ProjectCard from '@components/ProjectCard';
+import useStyles from '@styles/sections/projects';
 import projects from './projects';
-import ProjectCard from '../../components/ProjectCard';
-
-const useStyles = makeStyles((theme) =>
-  createStyles({
-    wrapper: {
-      paddingTop: '7rem',
-      textAlign: 'center',
-    },
-
-    title: {
-      fontSize: '4rem',
-    },
-
-    caption: {
-      paddingTop: '1.5rem',
-      fontSize: '2rem',
-    },
-
-    projectsWrapper: {
-      display: 'flex',
-      flexWrap: 'wrap',
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      wrapper: {
-        marginTop: '4rem',
-      },
-    },
-  }),
-);
 
 function Projects() {
   const classes = useStyles();

@@ -1,63 +1,13 @@
-import { makeStyles, createStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import Typography from '@material-ui/core/Typography';
-import { IconType } from 'react-icons';
 
+import { Technology } from '@common/types';
+import useStyles from '@styles/sections/experience';
 import technologies from './technologies';
-
-interface Technology {
-  name: string;
-  icon: IconType;
-}
-
-const useStyles = makeStyles((theme) =>
-  createStyles({
-    wrapper: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      paddingTop: '7rem',
-    },
-
-    textWrapper: {
-      margin: 'auto',
-      textAlign: 'center',
-    },
-
-    title: {
-      fontSize: '3.5rem',
-    },
-
-    techsParagraph: {
-      maxWidth: '35rem',
-      padding: '1.5rem 2rem',
-    },
-
-    technologiesWrapper: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      margin: 'auto',
-    },
-
-    category: {
-      margin: '0 auto',
-      padding: '3rem',
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      category: {
-        padding: '1.5rem',
-      },
-
-      wrapper: {
-        flexDirection: 'column',
-      },
-    },
-  }),
-);
 
 function Experience() {
   const classes = useStyles();

@@ -11,21 +11,25 @@ import {
   SiPostgresql,
 } from 'react-icons/si';
 
-// TODO take new projects images and store on this repository
-const projects = [
+import { Project } from '@common/types';
+import stackFetchLanding from '@assets/img/stackfetch_landing.png';
+import portfolioLanding from '@assets/img/portfolio_landing.png';
+import minimalPaste from '@assets/img/minimalpaste_landing.png';
+
+const projects: Project[] = [
   {
     name: 'This Portfolio',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-    imagePath: 'https://github.com/arcticlimer.png',
+    imagePath: portfolioLanding,
     icons: [{ icon: SiTypescript }, { icon: SiReact }, { icon: SiMaterialUi }],
     portfolioUrl: '/project/portfolio',
   },
   {
-    name: 'Stackfetch',
+    name: 'StackFetch',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-    imagePath: 'https://github.com/arcticlimer.png',
+    imagePath: stackFetchLanding,
     icons: [
       { icon: SiTypescript },
       { icon: SiPostgresql },
@@ -34,15 +38,6 @@ const projects = [
       { icon: SiMaterialUi },
     ],
     portfolioUrl: '/project/stackfetch',
-  },
-  {
-    name: 'Minimalpaste',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-    imagePath:
-      'https://github.com/arcticlimer/minimalpaste/raw/master/img/minimalpaste.png',
-    icons: [{ icon: SiPython }, { icon: SiHtml5 }],
-    portfolioUrl: '/project/minimalpaste',
   },
   {
     name: 'FlaskQuotes',
@@ -59,22 +54,14 @@ const projects = [
     ],
     portfolioUrl: '/project/flaskquotes',
   },
-  // {
-  //   name: 'Project 4',
-  //   description:
-  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-  //   imagePath: 'https://github.com/arcticlimer.png',
-  //   icons: [{ icon: SiElixir }, { icon: SiGit }],
-  //   portfolioUrl: '/project/project1',
-  // },
-  // {
-  //   name: 'Project 5',
-  //   description:
-  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-  //   imagePath: 'https://github.com/arcticlimer.png',
-  //   icons: [{ icon: SiElixir }, { icon: SiGit }],
-  //   portfolioUrl: '/project/project1',
-  // },
+  {
+    name: 'Minimalpaste',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
+    imagePath: minimalPaste,
+    icons: [{ icon: SiPython }, { icon: SiHtml5 }],
+    portfolioUrl: '/project/minimalpaste',
+  },
 ];
 
 export default projects;

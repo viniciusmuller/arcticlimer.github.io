@@ -9,10 +9,13 @@ import MobileDrawer from './MobileDrawer';
 const useStyles = makeStyles((theme) =>
   createStyles({
     buttonCollapse: {
-      [theme.breakpoints.up('md')]: {
+      margin: '0.7rem',
+    },
+
+    [theme.breakpoints.up('md')]: {
+      buttonCollapse: {
         display: 'none',
       },
-      margin: '0.7rem',
     },
   }),
 );

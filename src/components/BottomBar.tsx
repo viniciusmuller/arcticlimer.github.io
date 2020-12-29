@@ -1,24 +1,7 @@
-import { makeStyles, createStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    root: {
-      height: '50px',
-      backgroundColor: '#ffffff',
-      boxShadow: '0 -2px 5px #919191',
-
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-
-    text: {
-      color: '#000',
-    },
-  }),
-);
+import useStyles from '@styles/components/bottomBar';
 
 function BottomBar() {
   const classes = useStyles();

@@ -1,19 +1,6 @@
-import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    root: {
-      paddingTop: '6rem',
-      display: 'flex',
-      justifyContent: 'center',
-    },
-
-    contactTitle: {
-      fontSize: '4.5rem',
-    },
-  }),
-);
+import useStyles from '@styles/sections/contact';
 
 function Contact() {
   const classes = useStyles();
