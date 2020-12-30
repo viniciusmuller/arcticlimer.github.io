@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import useStyles from '@styles/components/navbar/navbarCollapse';
 import ButtonNavbarCollapse from './ButtonNavbarCollapse';
 import ThemeChanger from './ThemeChanger';
+import sections from '../../sections';
 
 // TODO translate this transitions to material UI
 const Link = styled.a`
@@ -36,15 +37,14 @@ const Link = styled.a`
 
 function NavbarCollapse() {
   const classes = useStyles();
-  const sections = ['about', 'experience', 'projects', 'contact'];
 
   return (
     <div className={classes.root}>
       <ButtonNavbarCollapse />
       <div className={classes.buttonBar}>
-        {sections.map((section) => (
-          <Link key={section} href={`#${section}`}>
-            {section}
+        {sections.map(({ id }) => (
+          <Link key={id} href={`#${id}`}>
+            {id}
           </Link>
         ))}
         <ThemeChanger />

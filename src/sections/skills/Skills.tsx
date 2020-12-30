@@ -6,7 +6,7 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import Typography from '@material-ui/core/Typography';
 
 import { Technology } from '@common/types';
-import useStyles from '@styles/sections/experience';
+import useStyles from '@styles/sections/skills';
 import technologies from './technologies';
 
 function Experience() {
@@ -26,7 +26,7 @@ function Experience() {
     <div className={classes.wrapper}>
       <div className={classes.textWrapper}>
         <Typography variant="h1" className={classes.title}>
-          Technology experience
+          Technology skills
         </Typography>
         <Typography
           variant="subtitle1"

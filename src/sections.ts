@@ -1,5 +1,5 @@
 import About from './sections/about/About';
-import Experience from './sections/experience/Experience';
+import Skills from './sections/skills/Skills';
 import Projects from './sections/projects/Projects';
 import Contact from './sections/contact/Contact';
 
@@ -9,8 +9,8 @@ const sections = [
     id: 'about',
   },
   {
-    component: Experience,
-    id: 'experience',
+    component: Skills,
+    id: 'skills',
   },
   {
     component: Projects,

@@ -4,24 +4,24 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 import useStyles from '@styles/components/navbar/mobileDrawer';
+import sections from '../../sections';
 
 // TODO remove any
 function MobileDrawer(props: any) {
   const classes = useStyles();
-  const options = ['about', 'experience', 'projects', 'contact'];
 
   return (
     <Drawer anchor="top" {...props}>
       <List>
-        {options.map((opt) => (
+        {sections.map(({ id }) => (
           <ListItem
-            key={opt}
+            key={id}
             className={classes.listItem}
             button
             component="a"
-            href={`#${opt}`}
+            href={`#${id}`}
           >
-            <ListItemText primary={opt} />
+            <ListItemText primary={id} />
           </ListItem>
         ))}
       </List>

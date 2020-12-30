@@ -1,6 +1,5 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
-// TODO theme.spacing?
 const useStyles = makeStyles((theme) =>
   createStyles({
     wrapper: {

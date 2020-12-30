@@ -34,7 +34,7 @@ function ProjectCard(props: Project) {
               <iconObject.icon
                 key={i.toString()}
                 className={classes.techIcon}
-                size={20}
+                size={23}
               />
             ))}
           </div>
