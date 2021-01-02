@@ -3,7 +3,6 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import { TiHome } from 'react-icons/ti';
 
-import ThemeChanger from './ThemeChanger';
 import MobileDrawer from './MobileDrawer';
 
 const useStyles = makeStyles((theme) =>
@@ -20,19 +19,19 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-function ButtonNavbarCollapse() {
+function NavbarCollapsedButton() {
   const [open, setOpen] = useState(false);
   const classes = useStyles();
 
   return (
     <div className={classes.buttonCollapse}>
-      <IconButton onClick={() => setOpen(true)}>
+      <IconButton onClick={() => setOpen(!open)}>
         <TiHome />
       </IconButton>
-      <ThemeChanger />
-      <MobileDrawer open={open} onClick={() => setOpen(false)} />
+      {/* <ThemeChanger /> */}
+      <MobileDrawer open={open} onClick={() => setOpen(!open)} />
     </div>
   );
 }
 
-export default ButtonNavbarCollapse;
+export default NavbarCollapsedButton;

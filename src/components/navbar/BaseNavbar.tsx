@@ -2,11 +2,12 @@ import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 
+import { Navbar } from '@common/types';
 import useStyles from '@styles/components/navbar/navbar';
-import NavbarCollapse from './NavbarCollapse';
 
-function NewNavbar() {
+function BaseNavbar(props: Navbar) {
   const classes = useStyles();
+  const { children } = props;
 
   return (
     <div className={classes.root}>
@@ -15,11 +16,11 @@ function NewNavbar() {
           <Typography variant="h5" className={classes.title}>
             Vinícius Müller
           </Typography>
-          <NavbarCollapse />
+          {children}
         </Toolbar>
       </AppBar>
     </div>
   );
 }
 
-export default NewNavbar;
+export default BaseNavbar;

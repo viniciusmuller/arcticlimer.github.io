@@ -1,14 +1,19 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import projects from '@data/projects';
+import ProjectPage from '@projects/ProjectPage';
 import Portfolio from './Portfolio';
-import ProjectPage from './projects/ProjectPage';
 
 function Routes() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Portfolio} />
-        <Route path="/project" component={ProjectPage} />
+        {projects.map((project) => (
+          <Route key={project.name} path={project.portfolioUrl}>
+            <ProjectPage {...project} />
+          </Route>
+        ))}
       </Switch>
     </BrowserRouter>
   );

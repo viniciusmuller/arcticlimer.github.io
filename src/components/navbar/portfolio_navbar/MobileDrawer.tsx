@@ -3,8 +3,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import useStyles from '@styles/components/navbar/mobileDrawer';
-import sections from '../../sections';
+import useStyles from '@styles/components/navbar/portfolio_navbar/mobileDrawer';
+import sections from '@data/sections';
 
 // TODO remove any
 function MobileDrawer(props: any) {

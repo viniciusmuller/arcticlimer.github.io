@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) =>
       flexDirection: 'column',
       alignItems: 'center',
 
-      paddingTop: '3rem',
+      paddingTop: 'calc(2rem + 56px)',
       marginBottom: '4rem',
     },
 
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) =>
     projectDetailsWrapper: {
       display: 'flex',
       flexWrap: 'wrap',
-      justifyContent: 'space-evenly',
+      justifyContent: 'space-around',
     },
 
     projectDetailsText: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) =>
     teste: {
       textAlign: 'justify',
       fontSize: '1.1rem',
-      padding: '1rem 1rem 3rem 1rem',
+      padding: '1rem 4rem 3rem 1rem',
     },
 
     list: {
@@ -55,16 +55,16 @@ const useStyles = makeStyles((theme) =>
       },
     },
 
-    // gallery: {
-    //   display: 'flex',
-    //   flexWrap: 'wrap',
+    gallery: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
 
-    //   // TODO improve image grid structure
-    //   '& img': {
-    //     padding: '0.3rem',
-    //     maxWidth: '50%',
-    //   },
-    // },
+      '& img': {
+        margin: '1rem',
+        maxWidth: '100%',
+      },
+    },
 
     [theme.breakpoints.up('md')]: {
       gallery: {
@@ -84,6 +84,10 @@ const useStyles = makeStyles((theme) =>
 
       list: {
         margin: '1rem auto',
+
+        '& li': {
+          marginLeft: '2.2rem',
+        },
       },
     },
   }),

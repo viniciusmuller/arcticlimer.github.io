@@ -2,7 +2,7 @@ import Typography from '@material-ui/core/Typography';
 
 import ProjectCard from '@components/ProjectCard';
 import useStyles from '@styles/sections/projects';
-import projects from './projects';
+import projects from '@data/projects';
 
 function Projects() {
   const classes = useStyles();

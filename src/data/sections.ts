@@ -1,9 +1,10 @@
-import About from './sections/about/About';
-import Skills from './sections/skills/Skills';
-import Projects from './sections/projects/Projects';
-import Contact from './sections/contact/Contact';
+import { Section } from '@common/types';
+import About from '@sections/About';
+import Skills from '@sections/Skills';
+import Projects from '@sections/Projects';
+import Contact from '@sections/Contact';
 
-const sections = [
+const sections: Section[] = [
   {
     component: About,
     id: 'about',

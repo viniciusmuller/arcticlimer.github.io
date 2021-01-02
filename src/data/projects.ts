@@ -20,16 +20,21 @@ const projects: Project[] = [
   {
     name: 'This Portfolio',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-    imagePath: portfolioLanding,
+      'My personal portfolio built with React and hosted at GitHub pages.',
+    about: 'lorem '.repeat(15),
+    landingImage: portfolioLanding,
+    challenges: ['List item', 'List item', 'List item'],
     icons: [{ icon: SiTypescript }, { icon: SiReact }, { icon: SiMaterialUi }],
     portfolioUrl: '/project/portfolio',
+    sourceCodeUrl: 'https://github.com/arcticlimer/portfolio',
   },
   {
     name: 'StackFetch',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-    imagePath: stackFetchLanding,
+      'A platform for users share their technology stack and GitHub profiles with the world.',
+    about: 'lorem '.repeat(15),
+    landingImage: stackFetchLanding,
+    challenges: ['List item', 'List item', 'List item', 'List item'],
     icons: [
       { icon: SiTypescript },
       { icon: SiPostgresql },
@@ -38,13 +43,15 @@ const projects: Project[] = [
       { icon: SiMaterialUi },
     ],
     portfolioUrl: '/project/stackfetch',
+    sourceCodeUrl: 'https://github.com/arcticlimer/stackfetch',
   },
   {
     name: 'FlaskQuotes',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-    imagePath:
+    description: 'A Flask web application for sharing personal quotes.',
+    about: 'lorem '.repeat(15),
+    landingImage:
       'https://github.com/arcticlimer/flaskquotes/raw/master/img/main.png',
+    challenges: ['List item', 'List item', 'List item', 'List item'],
     icons: [
       { icon: SiPython },
       { icon: SiFlask },
@@ -53,14 +60,18 @@ const projects: Project[] = [
       { icon: SiBootstrap },
     ],
     portfolioUrl: '/project/flaskquotes',
+    sourceCodeUrl: 'https://github.com/arcticlimer/flaskquotes',
   },
   {
     name: 'Minimalpaste',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam nisi debitis odit optio consequuntur alias molestiae cum fugit nesciunt!',
-    imagePath: minimalPaste,
+      'A minimalist pastebin service using only Python built-in modules.',
+    about: 'lorem '.repeat(15),
+    landingImage: minimalPaste,
+    challenges: ['List item', 'List item', 'List item', 'List item'],
     icons: [{ icon: SiPython }, { icon: SiHtml5 }],
     portfolioUrl: '/project/minimalpaste',
+    sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
   },
 ];
 

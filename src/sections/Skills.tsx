@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { Technology } from '@common/types';
 import useStyles from '@styles/sections/skills';
-import technologies from './technologies';
+import technologies from '@data/technologies';
 
 function Experience() {
   const classes = useStyles();

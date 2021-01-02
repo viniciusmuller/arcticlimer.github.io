@@ -3,9 +3,12 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["./src/components/*"],
+      "@projects/*": ["./src/projects/*"],
+      "@sections/*": ["./src/sections/*"],
       "@common/*": ["./src/common/*"],
       "@styles/*": ["./src/styles/*"],
       "@assets/*": ["./src/assets/*"],
+      "@data/*": ["./src/data/*"],
       "@~/*": ["./src/*"]
     }
   }

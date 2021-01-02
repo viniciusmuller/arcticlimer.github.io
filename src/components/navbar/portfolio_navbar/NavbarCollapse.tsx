@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-import useStyles from '@styles/components/navbar/navbarCollapse';
-import ButtonNavbarCollapse from './ButtonNavbarCollapse';
-import ThemeChanger from './ThemeChanger';
-import sections from '../../sections';
+import sections from '@data/sections';
+import useStyles from '@styles/components/navbar/portfolio_navbar/navbarCollapse';
+import NavbarCollapsedButton from './NavbarCollapsedButton';
 
 // TODO translate this transitions to material UI
 const Link = styled.a`
@@ -40,14 +39,15 @@ function NavbarCollapse() {
 
   return (
     <div className={classes.root}>
-      <ButtonNavbarCollapse />
+      <NavbarCollapsedButton />
       <div className={classes.buttonBar}>
         {sections.map(({ id }) => (
           <Link key={id} href={`#${id}`}>
             {id}
           </Link>
         ))}
-        <ThemeChanger />
+
+        {/* <ThemeChanger /> */}
       </div>
     </div>
   );

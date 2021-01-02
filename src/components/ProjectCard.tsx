@@ -11,22 +11,21 @@ import useStyles from '@styles/components/projectCard';
 
 function ProjectCard(props: Project) {
   const classes = useStyles();
-  const { imagePath, name, description, icons, portfolioUrl } = props;
+  const { landingImage, name, description, icons, portfolioUrl } = props;
 
   return (
     <Card key={name} className={classes.root}>
       <CardActionArea component={Link} to={portfolioUrl}>
-        <CardMedia className={classes.media} image={imagePath} title={name} />
+        <CardMedia
+          className={classes.media}
+          image={landingImage}
+          title={name}
+        />
         <CardContent>
           <Typography gutterBottom align="left" variant="h5" component="h2">
             {name}
           </Typography>
-          <Typography
-            color="textSecondary"
-            align="justify"
-            variant="body2"
-            component="p"
-          >
+          <Typography color="textSecondary" align="justify" variant="body2">
             {description}
           </Typography>
           <div className={classes.iconsWrapper}>
@@ -34,7 +33,7 @@ function ProjectCard(props: Project) {
               <iconObject.icon
                 key={i.toString()}
                 className={classes.techIcon}
-                size={23}
+                size={24}
               />
             ))}
           </div>

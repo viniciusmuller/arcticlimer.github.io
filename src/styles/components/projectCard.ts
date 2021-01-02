@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) =>
     root: {
       margin: 'auto',
       marginTop: 65,
-      maxWidth: 340,
+      width: 340,
     },
 
     media: {

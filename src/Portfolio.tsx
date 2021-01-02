@@ -1,9 +1,9 @@
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 
-import darkTheme from './styles/themes';
-import Navbar from './components/navbar/Navbar';
-import sections from './sections';
-import BottomBar from './components/BottomBar';
+import sections from '@data/sections';
+import darkTheme from '@styles/themes';
+import PortfolioNavbar from '@components/navbar/PortfolioNavbar';
+import BottomBar from '@components/navbar/BottomBar';
 
 const useStyles = makeStyles({
   section: {
@@ -16,14 +16,15 @@ function Portfolio() {
 
   return (
     <ThemeProvider theme={darkTheme}>
+      <PortfolioNavbar />
       <div className="App">
-        <Navbar />
         {sections.map((sectionObject) => (
           <section
             key={sectionObject.id}
             className={classes.section}
             id={sectionObject.id}
           >
+            {/* TODO use JSX.Element */}
             <sectionObject.component />
           </section>
         ))}
