@@ -25,7 +25,6 @@ export interface Project {
   landingImage: string;
   challenges: string[];
   icons: Icon[];
-  portfolioUrl: string;
   otherImages?: string[];
   sourceCodeUrl?: string;
 }

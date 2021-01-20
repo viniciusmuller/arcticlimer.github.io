@@ -1,32 +1,39 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  min-height: calc(100vh + 56px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ProfilePic = styled.img`
+  width: 14rem;
+  height: 14rem;
+  // Placeholder background while the image loads
+  background-color: #c4c4c4;
+  border-radius: 50%;
+
+  @media (max-width: 600px) {
+    width: 11rem;
+    height: 11rem;
+  }
+`;
+
+export const TextWrapper = styled.div`
+  position: relative;
+  text-align: center;
+  max-width: 30rem;
+`;
+
 const useStyles = makeStyles((theme) =>
   createStyles({
-    wrapper: {
-      minHeight: 'calc(100vh + 56px)',
-      display: 'flex',
-      flexWrap: 'wrap',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-
     landingSvg: {
       marginBottom: '6rem',
       width: '50vw',
-    },
-
-    textWrapper: {
-      position: 'relative',
-      textAlign: 'center',
-      maxWidth: '30rem',
-    },
-
-    picture: {
-      width: '14rem',
-      height: '14rem',
-      // Placeholder background while the image don't load
-      backgroundColor: '#e2e2e2',
-      borderRadius: '50%',
     },
 
     title: {
@@ -45,25 +52,14 @@ const useStyles = makeStyles((theme) =>
     },
 
     socialSvg: {
-      fill: 'inherit',
-    },
-
-    [theme.breakpoints.up('md')]: {
-      wrapper: {
-        paddingRight: '5%',
-      },
+      fill: '#262626',
+      fontSize: '2.5rem',
+      margin: '0 7px',
     },
 
     [theme.breakpoints.down('md')]: {
       landingSvg: {
         display: 'none',
-      },
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      picture: {
-        width: '11rem',
-        height: '11rem',
       },
     },
 

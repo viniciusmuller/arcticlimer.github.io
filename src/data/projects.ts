@@ -25,7 +25,6 @@ const projects: Project[] = [
     landingImage: portfolioLanding,
     challenges: ['List item', 'List item', 'List item'],
     icons: [{ icon: SiTypescript }, { icon: SiReact }, { icon: SiMaterialUi }],
-    portfolioUrl: '/project/portfolio',
     sourceCodeUrl: 'https://github.com/arcticlimer/portfolio',
   },
   {
@@ -42,7 +41,6 @@ const projects: Project[] = [
       { icon: SiSass },
       { icon: SiMaterialUi },
     ],
-    portfolioUrl: '/project/stackfetch',
     sourceCodeUrl: 'https://github.com/arcticlimer/stackfetch',
   },
   {
@@ -59,7 +57,6 @@ const projects: Project[] = [
       { icon: SiCss3 },
       { icon: SiBootstrap },
     ],
-    portfolioUrl: '/project/flaskquotes',
     sourceCodeUrl: 'https://github.com/arcticlimer/flaskquotes',
   },
   {
@@ -70,7 +67,6 @@ const projects: Project[] = [
     landingImage: minimalPaste,
     challenges: ['List item', 'List item', 'List item', 'List item'],
     icons: [{ icon: SiPython }, { icon: SiHtml5 }],
-    portfolioUrl: '/project/minimalpaste',
     sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
   },
 ];

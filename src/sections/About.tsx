@@ -2,17 +2,20 @@ import Typography from '@material-ui/core/Typography';
 import { AiFillGithub } from 'react-icons/ai';
 
 import { ReactComponent as UndrawProgramming } from '@assets/svg/undraw_programming.svg';
-import useStyles from '@styles/sections/about';
+import useStyles, {
+  Wrapper,
+  TextWrapper,
+  ProfilePic,
+} from '@styles/sections/about';
 
 function About() {
   const classes = useStyles();
 
   return (
-    <div className={classes.wrapper}>
+    <Wrapper>
       <UndrawProgramming className={classes.landingSvg} />
-      <div className={classes.textWrapper}>
-        <img
-          className={classes.picture}
+      <TextWrapper>
+        <ProfilePic
           src="https://github.com/arcticlimer.png"
           alt="Vinícius Müller"
         />
@@ -36,10 +39,10 @@ function About() {
           target="_blank"
           rel="noreferrer"
         >
-          <AiFillGithub className={classes.socialSvg} size="2.5rem" />
+          <AiFillGithub className={classes.socialSvg} />
         </a>
-      </div>
-    </div>
+      </TextWrapper>
+    </Wrapper>
   );
 }
 

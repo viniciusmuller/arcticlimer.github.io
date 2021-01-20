@@ -1,17 +1,13 @@
 {
-  "homepage": "https://arcticlimer.github.io/portfolio",
+  "homepage": "https://arcticlimer.github.io/",
   "resolutions": {
     "styled-components": "^5"
   },
-  "name": "portfolio",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
@@ -48,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.6",
     "@types/styled-components": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.11.0",
     "@typescript-eslint/parser": "^4.11.0",
@@ -67,7 +62,6 @@
     "react-app-rewire-alias": "^0.1.9",
     "react-app-rewired": "^2.1.8",
     "react-icons": "^4.1.0",
-    "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1"
   }
 }

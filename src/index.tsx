@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import GlobalStyles from './styles/globalStyles';
 
-import Routes from './routes';
+import Portfolio from './Portfolio';
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
-    <Routes />
+    <Portfolio />
   </React.StrictMode>,
   document.getElementById('root'),
 );
