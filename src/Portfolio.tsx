@@ -3,7 +3,6 @@ import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import sections from '@data/sections';
 import darkTheme from '@styles/themes';
 import PortfolioNavbar from '@components/navbar/PortfolioNavbar';
-import BottomBar from '@components/navbar/BottomBar';
 
 const useStyles = makeStyles({
   section: {
@@ -28,7 +27,6 @@ function Portfolio() {
             <sectionObject.component />
           </section>
         ))}
-        <BottomBar />
       </div>
     </ThemeProvider>
   );

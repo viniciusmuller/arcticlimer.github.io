@@ -6,10 +6,15 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import Typography from '@material-ui/core/Typography';
 
 import { Technology } from '@common/types';
-import useStyles from '@styles/sections/skills';
+import useStyles, {
+  Wrapper,
+  TextWrapper,
+  TechnologiesWrapper,
+  Category,
+} from '@styles/sections/skills';
 import technologies from '@data/technologies';
 
-function Experience() {
+function Skills() {
   const classes = useStyles();
 
   // Helper function for rendering a technology inside a MUI List
@@ -23,8 +28,8 @@ function Experience() {
   );
 
   return (
-    <div className={classes.wrapper}>
-      <div className={classes.textWrapper}>
+    <Wrapper>
+      <TextWrapper>
         <Typography variant="h1" className={classes.title}>
           Technology skills
         </Typography>
@@ -39,18 +44,18 @@ function Experience() {
           voluptates deleniti nesciunt, fugit sequi expedita provident tempora
           nam dicta, quisquam error saepe praesentium!
         </Typography>
-      </div>
-      <div className={classes.technologiesWrapper}>
+      </TextWrapper>
+      <TechnologiesWrapper>
         {Object.entries(technologies).map(([category, stack]) => (
-          <div key={category} className={classes.category}>
+          <Category key={category}>
             <List subheader={<ListSubheader>{category}</ListSubheader>}>
               {stack.map(renderTechnology)}
             </List>
-          </div>
+          </Category>
         ))}
-      </div>
-    </div>
+      </TechnologiesWrapper>
+    </Wrapper>
   );
 }
 
-export default Experience;
+export default Skills;

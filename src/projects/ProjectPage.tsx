@@ -1,7 +1,7 @@
 import Typography from '@material-ui/core/Typography';
 
 import { Project } from '@common/types';
-import ProjectNavbar from '@components/navbar/ProjectNavbar';
+// import ProjectNavbar from '@components/navbar/ProjectNavbar';
 import useStyles from '@styles/projects/projectPage';
 
 function ProjectPage(props: Project) {
@@ -19,7 +19,7 @@ function ProjectPage(props: Project) {
 
   return (
     <div className={classes.wrapper}>
-      <ProjectNavbar />
+      {/* <ProjectNavbar /> */}
       <Typography variant="h1" className={classes.projectTitle}>
         Project: {name}
       </Typography>

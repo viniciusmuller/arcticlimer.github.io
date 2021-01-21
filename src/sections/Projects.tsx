@@ -10,10 +10,10 @@ function Projects() {
   return (
     <div className={classes.wrapper}>
       <Typography variant="h1" className={classes.title}>
-        Main projects
+        Projects
       </Typography>
       <Typography variant="h2" className={classes.caption}>
-        Click on any project card to see the details.
+        Click on any card to see the details.
       </Typography>
       <div className={classes.projectsWrapper}>
         {projects.map((project) => (

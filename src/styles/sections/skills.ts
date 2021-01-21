@@ -1,18 +1,38 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 
-const useStyles = makeStyles((theme) =>
+export const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 7rem;
+`;
+
+export const TextWrapper = styled.div`
+  margin: auto;
+  text-align: center;
+`;
+
+export const TechnologiesWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const Category = styled.div`
+  margin: 0 auto;
+  padding: 3rem;
+
+  @media (min-width: 600px) {
+    padding: 1.5rem;
+  }
+`;
+
+const useStyles = makeStyles(() =>
   createStyles({
-    wrapper: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      paddingTop: '7rem',
-    },
-
-    textWrapper: {
-      margin: 'auto',
-      textAlign: 'center',
-    },
-
     title: {
       fontSize: '3.5rem',
     },
@@ -20,27 +40,6 @@ const useStyles = makeStyles((theme) =>
     techsParagraph: {
       maxWidth: '35rem',
       padding: '1.5rem 2rem',
-    },
-
-    technologiesWrapper: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      margin: 'auto',
-    },
-
-    category: {
-      margin: '0 auto',
-      padding: '3rem',
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      category: {
-        padding: '1.5rem',
-      },
-
-      wrapper: {
-        flexDirection: 'column',
-      },
     },
   }),
 );
