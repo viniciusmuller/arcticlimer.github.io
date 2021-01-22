@@ -1,26 +1,26 @@
 import Typography from '@material-ui/core/Typography';
 
 import ProjectCard from '@components/ProjectCard';
-import useStyles from '@styles/sections/projects';
+import useStyles, { Wrapper, ProjectsWrapper } from '@styles/sections/projects';
 import projects from '@data/projects';
 
 function Projects() {
   const classes = useStyles();
 
   return (
-    <div className={classes.wrapper}>
+    <Wrapper>
       <Typography variant="h1" className={classes.title}>
         Projects
       </Typography>
       <Typography variant="h2" className={classes.caption}>
         Click on any card to see the details.
       </Typography>
-      <div className={classes.projectsWrapper}>
+      <ProjectsWrapper>
         {projects.map((project) => (
           <ProjectCard key={project.name} {...project} />
         ))}
-      </div>
-    </div>
+      </ProjectsWrapper>
+    </Wrapper>
   );
 }
 

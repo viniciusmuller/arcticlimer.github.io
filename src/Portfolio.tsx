@@ -1,34 +1,20 @@
-import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
-
+import Section from '@styles/sections/section';
 import sections from '@data/sections';
-import darkTheme from '@styles/themes';
-import PortfolioNavbar from '@components/navbar/PortfolioNavbar';
-
-const useStyles = makeStyles({
-  section: {
-    minHeight: '100vh',
-  },
-});
+import Navbar from '@components/navbar/Navbar';
 
 function Portfolio() {
-  const classes = useStyles();
-
   return (
-    <ThemeProvider theme={darkTheme}>
-      <PortfolioNavbar />
+    <div>
+      <Navbar />
       <div className="App">
         {sections.map((sectionObject) => (
-          <section
-            key={sectionObject.id}
-            className={classes.section}
-            id={sectionObject.id}
-          >
+          <Section key={sectionObject.id} id={sectionObject.id}>
             {/* TODO use JSX.Element */}
             <sectionObject.component />
-          </section>
+          </Section>
         ))}
       </div>
-    </ThemeProvider>
+    </div>
   );
 }
 

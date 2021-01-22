@@ -1,12 +1,22 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 
-const useStyles = makeStyles((theme) =>
+export const Wrapper = styled.div`
+  padding-top: 7rem;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    margin-top: 4rem;
+  }
+`;
+
+export const ProjectsWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const useStyles = makeStyles(() =>
   createStyles({
-    wrapper: {
-      paddingTop: '7rem',
-      textAlign: 'center',
-    },
-
     title: {
       fontSize: '4rem',
     },
@@ -14,17 +24,6 @@ const useStyles = makeStyles((theme) =>
     caption: {
       paddingTop: '1.5rem',
       fontSize: '2rem',
-    },
-
-    projectsWrapper: {
-      display: 'flex',
-      flexWrap: 'wrap',
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      wrapper: {
-        marginTop: '4rem',
-      },
     },
   }),
 );

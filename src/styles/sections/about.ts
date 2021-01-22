@@ -3,7 +3,7 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  min-height: calc(100vh + 56px);
+  padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

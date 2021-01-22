@@ -28,7 +28,6 @@ function NavbarCollapsedButton() {
       <IconButton onClick={() => setOpen(!open)}>
         <TiHome />
       </IconButton>
-      {/* <ThemeChanger /> */}
       <MobileDrawer open={open} onClick={() => setOpen(!open)} />
     </div>
   );

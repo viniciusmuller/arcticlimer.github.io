@@ -5,10 +5,12 @@ const useStyles = makeStyles(() =>
     root: {
       flexGrow: 1,
     },
+
     AppBar: {
       backgroundColor: '#fcfcfc',
       color: '#000000',
     },
+
     title: {
       flexGrow: 1,
     },

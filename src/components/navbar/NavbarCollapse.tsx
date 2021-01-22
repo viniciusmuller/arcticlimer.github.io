@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 import sections from '@data/sections';
-import useStyles from '@styles/components/navbar/portfolio_navbar/navbarCollapse';
+import useStyles from '@styles/components/navbar/navbarCollapse';
 import NavbarCollapsedButton from './NavbarCollapsedButton';
 
-// TODO translate this transitions to material UI
 const Link = styled.a`
   color: #000;
   margin-left: 2rem;
@@ -46,8 +45,6 @@ function NavbarCollapse() {
             {id}
           </Link>
         ))}
-
-        {/* <ThemeChanger /> */}
       </div>
     </div>
   );
