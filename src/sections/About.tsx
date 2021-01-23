@@ -38,6 +38,7 @@ function About() {
           href="https://github.com/arcticlimer"
           target="_blank"
           rel="noreferrer"
+          title="GitHub profile"
         >
           <AiFillGithub className={classes.socialSvg} />
         </a>
