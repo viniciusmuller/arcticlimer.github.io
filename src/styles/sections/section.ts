@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export default styled.section`
-  min-height: 100vh;
-  padding-top: 56px;
+const SectionsWrapper = styled.section`
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  height: 100vh;
 `;
+
+export default SectionsWrapper;

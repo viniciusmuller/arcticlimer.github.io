@@ -1,21 +1,13 @@
 import { IconType } from 'react-icons';
 
 export interface Icon {
+  name: string;
   icon: IconType;
-}
-
-export interface Navbar {
-  children: React.ReactNode;
 }
 
 export interface Technology {
   name: string;
   icon: IconType;
-}
-
-export interface Section {
-  component: React.FunctionComponent;
-  id: string;
 }
 
 export interface Project {

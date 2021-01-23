@@ -1,10 +1,17 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Section = styled.section`
+  min-height: 100vh;
+
   display: flex;
   flex-wrap: wrap;
-  padding-top: 7rem;
+
+  scroll-snap-align: start;
+
+  @media (max-width: 1024px) {
+    padding-top: 6rem;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -13,9 +20,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const TechnologiesWrapper = styled.div`
+  margin: auto;
+
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
 
   @media (max-width: 768px) {
     flex-direction: column;

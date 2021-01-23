@@ -3,7 +3,7 @@ import { AiFillGithub } from 'react-icons/ai';
 
 import { ReactComponent as UndrawProgramming } from '@assets/svg/undraw_programming.svg';
 import useStyles, {
-  Wrapper,
+  Section,
   TextWrapper,
   ProfilePic,
 } from '@styles/sections/about';
@@ -12,7 +12,7 @@ function About() {
   const classes = useStyles();
 
   return (
-    <Wrapper>
+    <Section id="about">
       <UndrawProgramming className={classes.landingSvg} />
       <TextWrapper>
         <ProfilePic
@@ -42,7 +42,7 @@ function About() {
           <AiFillGithub className={classes.socialSvg} />
         </a>
       </TextWrapper>
-    </Wrapper>
+    </Section>
   );
 }
 

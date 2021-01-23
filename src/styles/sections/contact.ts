@@ -1,17 +1,36 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Section = styled.section`
+  min-height: 100vh;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-top: 25vh;
+  justify-content: space-around;
+  padding: 0 6vw;
+
+  scroll-snap-align: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+  }
 `;
 
-const useStyles = makeStyles(() =>
+export const TextWrapper = styled.div`
+  text-align: center;
+  max-width: 30vw;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
+
+const useStyles = makeStyles((theme) =>
   createStyles({
     contactTitle: {
-      fontSize: '4.5rem',
+      fontSize: '3.5rem',
     },
 
     contactCaption: {
@@ -21,13 +40,23 @@ const useStyles = makeStyles(() =>
     },
 
     mail: {
-      display: 'flex',
-      alignItems: 'center',
       fontSize: '1.2rem',
     },
 
     mailSvg: {
       marginRight: '0.3rem',
+    },
+
+    contactSvg: {
+      width: '40vw',
+      height: '40vw',
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      contactSvg: {
+        marginTop: '2rem',
+        width: '100vw',
+      },
     },
   }),
 );

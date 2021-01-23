@@ -1,88 +1,9 @@
-import { IoLogoNodejs } from 'react-icons/io';
-import {
-  SiElixir,
-  SiTypescript,
-  SiJavascript,
-  SiPython,
-  SiFlask,
-  SiCss3,
-  SiHtml5,
-  SiSass,
-  SiReact,
-  SiBootstrap,
-  SiMaterialUi,
-  SiLinux,
-  SiPostgresql,
-  SiGit,
-} from 'react-icons/si';
+import * as i from '@data/icons';
 
 const technologies = {
-  Backend: [
-    {
-      name: 'Python',
-      icon: SiPython,
-    },
-    {
-      name: 'Flask',
-      icon: SiFlask,
-    },
-    {
-      name: 'Javascript',
-      icon: SiJavascript,
-    },
-    {
-      name: 'Typescript',
-      icon: SiTypescript,
-    },
-    {
-      name: 'Elixir',
-      icon: SiElixir,
-    },
-  ],
-  Frontend: [
-    {
-      name: 'HTML5',
-      icon: SiHtml5,
-    },
-    {
-      name: 'CSS3',
-      icon: SiCss3,
-    },
-    {
-      name: 'Bootstrap',
-      icon: SiBootstrap,
-    },
-    {
-      name: 'Sass',
-      icon: SiSass,
-    },
-    {
-      name: 'React',
-      icon: SiReact,
-    },
-    {
-      name: 'Material UI',
-      icon: SiMaterialUi,
-    },
-  ],
-  Misc: [
-    {
-      name: 'Linux',
-      icon: SiLinux,
-    },
-    {
-      name: 'PostgreSQL',
-      icon: SiPostgresql,
-    },
-    {
-      name: 'Node.js',
-      icon: IoLogoNodejs,
-    },
-    {
-      name: 'Git',
-      icon: SiGit,
-    },
-  ],
+  Backend: [i.pythonIcon, i.flaskIcon, i.jsIcon, i.tsIcon, i.elixirIcon],
+  Frontend: [i.htmlIcon, i.cssIcon, i.bootstrapIcon, i.sassIcon, i.reactIcon],
+  Others: [i.linuxIcon, i.pgIcon, i.nodeIcon, i.gitIcon],
 };
 
 export default technologies;

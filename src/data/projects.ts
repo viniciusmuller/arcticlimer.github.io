@@ -1,20 +1,12 @@
-import {
-  SiTypescript,
-  SiReact,
-  SiSass,
-  SiHtml5,
-  SiCss3,
-  SiBootstrap,
-  SiPython,
-  SiFlask,
-  SiMaterialUi,
-  SiPostgresql,
-} from 'react-icons/si';
-
 import { Project } from '@common/types';
+
+// Images
 import stackFetchLanding from '@assets/img/stackfetch_landing.png';
 import portfolioLanding from '@assets/img/portfolio_landing.png';
 import minimalPaste from '@assets/img/minimalpaste_landing.png';
+
+// Icons
+import * as i from '@data/icons';
 
 const projects: Project[] = [
   {
@@ -24,7 +16,7 @@ const projects: Project[] = [
     about: 'lorem '.repeat(15),
     landingImage: portfolioLanding,
     challenges: ['List item', 'List item', 'List item'],
-    icons: [{ icon: SiTypescript }, { icon: SiReact }, { icon: SiMaterialUi }],
+    icons: [i.tsIcon, i.reactIcon, i.muiIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/portfolio',
   },
   {
@@ -34,13 +26,7 @@ const projects: Project[] = [
     about: 'lorem '.repeat(15),
     landingImage: stackFetchLanding,
     challenges: ['List item', 'List item', 'List item', 'List item'],
-    icons: [
-      { icon: SiTypescript },
-      { icon: SiPostgresql },
-      { icon: SiReact },
-      { icon: SiSass },
-      { icon: SiMaterialUi },
-    ],
+    icons: [i.tsIcon, i.pgIcon, i.reactIcon, i.sassIcon, i.muiIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/stackfetch',
   },
   {
@@ -50,13 +36,7 @@ const projects: Project[] = [
     landingImage:
       'https://github.com/arcticlimer/flaskquotes/raw/master/img/main.png',
     challenges: ['List item', 'List item', 'List item', 'List item'],
-    icons: [
-      { icon: SiPython },
-      { icon: SiFlask },
-      { icon: SiHtml5 },
-      { icon: SiCss3 },
-      { icon: SiBootstrap },
-    ],
+    icons: [i.pythonIcon, i.flaskIcon, i.htmlIcon, i.cssIcon, i.bootstrapIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/flaskquotes',
   },
   {
@@ -66,7 +46,7 @@ const projects: Project[] = [
     about: 'lorem '.repeat(15),
     landingImage: minimalPaste,
     challenges: ['List item', 'List item', 'List item', 'List item'],
-    icons: [{ icon: SiPython }, { icon: SiHtml5 }],
+    icons: [i.pythonIcon, i.htmlIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
   },
 ];

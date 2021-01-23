@@ -32,6 +32,7 @@ function ProjectCard(props: Project) {
               <iconObject.icon
                 key={i.toString()}
                 className={classes.techIcon}
+                title={iconObject.name}
                 size={24}
               />
             ))}

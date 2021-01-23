@@ -3,8 +3,7 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-      margin: 'auto',
-      marginTop: 65,
+      marginTop: 50,
       width: 340,
     },
 

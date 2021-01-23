@@ -2,12 +2,20 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  padding-top: 2rem;
+export const Section = styled.section`
+  padding-top: 4rem;
+  min-height: 100vh;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  scroll-snap-align: center;
+
+  @media (max-width: 768px) {
+    padding-top: 7rem;
+  }
 `;
 
 export const ProfilePic = styled.img`

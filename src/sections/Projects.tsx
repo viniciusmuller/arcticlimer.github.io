@@ -1,14 +1,14 @@
 import Typography from '@material-ui/core/Typography';
 
 import ProjectCard from '@components/ProjectCard';
-import useStyles, { Wrapper, ProjectsWrapper } from '@styles/sections/projects';
+import useStyles, { Section, ProjectsWrapper } from '@styles/sections/projects';
 import projects from '@data/projects';
 
 function Projects() {
   const classes = useStyles();
 
   return (
-    <Wrapper>
+    <Section id="projects">
       <Typography variant="h1" className={classes.title}>
         Projects
       </Typography>
@@ -20,7 +20,7 @@ function Projects() {
           <ProjectCard key={project.name} {...project} />
         ))}
       </ProjectsWrapper>
-    </Wrapper>
+    </Section>
   );
 }
 

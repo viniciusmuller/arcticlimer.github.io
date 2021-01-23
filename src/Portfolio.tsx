@@ -1,20 +1,20 @@
-import Section from '@styles/sections/section';
-import sections from '@data/sections';
+import SectionsWrapper from '@styles/sections/section';
 import Navbar from '@components/navbar/Navbar';
+
+import About from '@sections/About';
+import Skills from '@sections/Skills';
+import Projects from '@sections/Projects';
+import Contact from '@sections/Contact';
 
 function Portfolio() {
   return (
-    <div>
+    <SectionsWrapper>
       <Navbar />
-      <div className="App">
-        {sections.map((sectionObject) => (
-          <Section key={sectionObject.id} id={sectionObject.id}>
-            {/* TODO use JSX.Element */}
-            <sectionObject.component />
-          </Section>
-        ))}
-      </div>
-    </div>
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </SectionsWrapper>
   );
 }
 

@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { Technology } from '@common/types';
 import useStyles, {
-  Wrapper,
+  Section,
   TextWrapper,
   TechnologiesWrapper,
   Category,
@@ -18,17 +18,19 @@ function Skills() {
   const classes = useStyles();
 
   // Helper function for rendering a technology inside a MUI List
-  const renderTechnology = (tech: Technology) => (
-    <ListItem key={tech.name}>
-      <ListItemIcon>
-        <tech.icon />
-      </ListItemIcon>
-      <ListItemText primary={tech.name} />
-    </ListItem>
-  );
+  function renderTechnology(tech: Technology) {
+    return (
+      <ListItem key={tech.name}>
+        <ListItemIcon>
+          <tech.icon />
+        </ListItemIcon>
+        <ListItemText primary={tech.name} />
+      </ListItem>
+    );
+  }
 
   return (
-    <Wrapper>
+    <Section id="skills">
       <TextWrapper>
         <Typography variant="h1" className={classes.title}>
           Technology skills
@@ -54,7 +56,7 @@ function Skills() {
           </Category>
         ))}
       </TechnologiesWrapper>
-    </Wrapper>
+    </Section>
   );
 }
 
