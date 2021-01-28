@@ -5,11 +5,23 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import { Project } from '@common/types';
-import useStyles from '@styles/components/projectCard';
+import { Project, Icon } from '@common/types';
+import useStyles, { IconsWrapper } from '@styles/components/projectCard';
 
 function ProjectCard(props: Project) {
   const classes = useStyles();
+
+  function renderIcons(icons: Icon[]) {
+    return icons.map((icon) => (
+      <icon.icon
+        key={icon.name}
+        className={classes.techIcon}
+        title={icon.name}
+        size={24}
+      />
+    ));
+  }
+
   const { landingImage, name, description, icons } = props;
 
   return (
@@ -27,16 +39,7 @@ function ProjectCard(props: Project) {
           <Typography color="textSecondary" align="justify" variant="body2">
             {description}
           </Typography>
-          <div className={classes.iconsWrapper}>
-            {icons.map((iconObject, i) => (
-              <iconObject.icon
-                key={i.toString()}
-                className={classes.techIcon}
-                title={iconObject.name}
-                size={24}
-              />
-            ))}
-          </div>
+          <IconsWrapper>{renderIcons(icons)}</IconsWrapper>
         </CardContent>
       </CardActionArea>
     </Card>

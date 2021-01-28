@@ -1,5 +1,12 @@
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
+import styled from 'styled-components';
+
+export const IconsWrapper = styled.div`
+  padding-top: 0.7rem;
+  text-align: left;
+`;
+
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {

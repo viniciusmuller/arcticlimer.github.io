@@ -21,6 +21,8 @@ export const Section = styled.section`
 export const ProfilePic = styled.img`
   width: 14rem;
   height: 14rem;
+
+  margin: auto;
   // Placeholder background while the image loads
   background-color: #c4c4c4;
   border-radius: 50%;
@@ -32,7 +34,8 @@ export const ProfilePic = styled.img`
 `;
 
 export const TextWrapper = styled.div`
-  position: relative;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   max-width: 30rem;
 `;
@@ -51,7 +54,8 @@ const useStyles = makeStyles((theme) =>
 
     caption: {
       fontSize: '1.3rem',
-      marginLeft: '57%',
+      marginLeft: 'auto',
+      paddingRight: '2rem',
     },
 
     aboutParagraph: {
@@ -73,7 +77,8 @@ const useStyles = makeStyles((theme) =>
 
     [theme.breakpoints.down('xs')]: {
       caption: {
-        marginLeft: '40%',
+        margin: 0,
+        padding: 0,
       },
     },
   }),

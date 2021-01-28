@@ -4,8 +4,8 @@ import { AiFillGithub } from 'react-icons/ai';
 import { ReactComponent as UndrawProgramming } from '@assets/svg/undraw_programming.svg';
 import useStyles, {
   Section,
-  TextWrapper,
   ProfilePic,
+  TextWrapper,
 } from '@styles/sections/about';
 
 function About() {
@@ -20,10 +20,10 @@ function About() {
           alt="Vinícius Müller"
         />
         <Typography variant="h1" className={classes.title}>
-          Hello, i&apos;m Vinícius Müller!{' '}
+          Hello, i&apos;m Vinícius Müller!
         </Typography>
         <Typography variant="body1" className={classes.caption}>
-          Web developer
+          Developer
         </Typography>
         <Typography
           align="justify"

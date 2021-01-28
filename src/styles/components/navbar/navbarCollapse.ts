@@ -4,6 +4,10 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   position: absolute;
   right: 1.5rem;
+
+  @media (max-width: 959px) {
+    right: 0;
+  }
 `;
 
 export const Link = styled.a`

@@ -18,7 +18,7 @@ function Skills() {
   const classes = useStyles();
 
   // Helper function for rendering a technology inside a MUI List
-  function renderTechnology(tech: Technology) {
+  function renderTechnologyObject(tech: Technology) {
     return (
       <ListItem key={tech.name}>
         <ListItemIcon>
@@ -27,6 +27,16 @@ function Skills() {
         <ListItemText primary={tech.name} />
       </ListItem>
     );
+  }
+
+  function renderTechnologies() {
+    return Object.entries(technologies).map(([category, stack]) => (
+      <Category key={category}>
+        <List subheader={<ListSubheader>{category}</ListSubheader>}>
+          {stack.map(renderTechnologyObject)}
+        </List>
+      </Category>
+    ));
   }
 
   return (
@@ -47,15 +57,7 @@ function Skills() {
           nam dicta, quisquam error saepe praesentium!
         </Typography>
       </TextWrapper>
-      <TechnologiesWrapper>
-        {Object.entries(technologies).map(([category, stack]) => (
-          <Category key={category}>
-            <List subheader={<ListSubheader>{category}</ListSubheader>}>
-              {stack.map(renderTechnology)}
-            </List>
-          </Category>
-        ))}
-      </TechnologiesWrapper>
+      <TechnologiesWrapper>{renderTechnologies()}</TechnologiesWrapper>
     </Section>
   );
 }

@@ -40,11 +40,14 @@ const useStyles = makeStyles((theme) =>
     },
 
     mail: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       fontSize: '1.2rem',
     },
 
     mailSvg: {
-      marginRight: '0.3rem',
+      marginRight: '0.4rem',
     },
 
     contactSvg: {
