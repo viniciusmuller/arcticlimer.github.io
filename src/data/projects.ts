@@ -1,8 +1,8 @@
-import { Project } from '@common/types';
+import { Project } from '@common/Project';
 
 // Images
 import stackFetchLanding from '@assets/img/stackfetch_landing.png';
-import portfolioLanding from '@assets/img/portfolio_landing.png';
+import websiteLanding from '@assets/img/website_landing.png';
 import minimalPaste from '@assets/img/minimalpaste_landing.png';
 
 // Icons
@@ -10,14 +10,14 @@ import * as i from '@data/icons';
 
 const projects: Project[] = [
   {
-    name: 'This Portfolio',
+    name: 'This website',
     description:
-      'My personal portfolio built with React and hosted at GitHub pages.',
+      'My personal website built with React and hosted at GitHub pages.',
     about: 'lorem '.repeat(15),
-    landingImage: portfolioLanding,
+    landingImage: websiteLanding,
     challenges: ['List item', 'List item', 'List item'],
-    icons: [i.tsIcon, i.reactIcon, i.muiIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/portfolio',
+    icons: [i.tsIcon, i.reactIcon, i.muiIcon, i.styledComponentsIcon],
+    sourceCodeUrl: 'https://github.com/arcticlimer/arcticlimer.github.io',
   },
   {
     name: 'StackFetch',

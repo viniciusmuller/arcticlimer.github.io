@@ -23,7 +23,7 @@ function About() {
           Hello, i&apos;m Vinícius Müller!
         </Typography>
         <Typography variant="body1" className={classes.caption}>
-          Developer
+          Software developer
         </Typography>
         <Typography
           align="justify"

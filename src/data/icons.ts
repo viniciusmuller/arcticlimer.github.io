@@ -1,6 +1,7 @@
 import { IoLogoNodejs } from 'react-icons/io';
 
 import {
+  SiStyledComponents,
   SiTypescript,
   SiReact,
   SiSass,
@@ -22,6 +23,11 @@ export const tsIcon = { name: 'Typescript', icon: SiTypescript };
 export const jsIcon = { name: 'Javascript', icon: SiJavascript };
 export const elixirIcon = { name: 'Elixir', icon: SiElixir };
 export const pythonIcon = { name: 'Python', icon: SiPython };
+
+export const styledComponentsIcon = {
+  name: 'Styled components',
+  icon: SiStyledComponents,
+};
 
 // Backend frameworks
 export const flaskIcon = { name: 'Flask', icon: SiFlask };

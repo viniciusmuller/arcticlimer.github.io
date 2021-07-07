@@ -33,6 +33,19 @@ const useStyles = makeStyles((theme) =>
         maxWidth: 290,
       },
     },
+
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+
+    paper: {
+      backgroundColor: '#fff',
+      borderRadius: 5,
+      padding: 30,
+      minWidth: '50%',
+    },
   }),
 );
 
