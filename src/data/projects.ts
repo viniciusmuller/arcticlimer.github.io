@@ -12,7 +12,7 @@ const projects: Project[] = [
   {
     name: 'Djanho',
     description:
-      'A rust CLI tool to convert VSCode themes to (Neo)Vim colorschemes.',
+      'A Rust CLI tool to convert VSCode themes to (Neo)Vim colorschemes.',
     about: 'lorem '.repeat(15),
     landingImage: '',
     challenges: [
@@ -24,7 +24,7 @@ const projects: Project[] = [
   },
   {
     name: 'Isotope',
-    description: 'Work with rust noise functions using Elixir NIFs.',
+    description: 'Work with Rust noise functions using Elixir NIFs.',
     about: 'lorem '.repeat(15),
     landingImage: '',
     challenges: [
@@ -32,6 +32,7 @@ const projects: Project[] = [
       'Publishing a package to hex.pm',
       'Writing native implemented functions (NIFs) with Rust',
       'Integrating Elixir with Rust libraries',
+      'Achieving high test coverage and ensuring it using coveralls.io',
     ],
     icons: [i.elixirIcon, i.rustIcon],
     sourceCodeUrl: 'https://github.com/phiriq/isotope',
@@ -46,8 +47,8 @@ const projects: Project[] = [
       'Handling the DOM using events',
       'Creating a simple yet useful interface',
     ],
-    icons: [i.pythonIcon, i.htmlIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
+    icons: [i.jsIcon, i.htmlIcon],
+    sourceCodeUrl: 'https://github.com/arcticlimer/puretypist',
   },
   {
     name: 'This website',

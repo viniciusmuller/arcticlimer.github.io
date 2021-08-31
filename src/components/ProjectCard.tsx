@@ -4,6 +4,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -32,7 +33,15 @@ function ProjectCard(props: Project) {
     ));
   }
 
-  const { about, challenges, landingImage, name, description, icons } = props;
+  const {
+    about,
+    challenges,
+    landingImage,
+    sourceCodeUrl,
+    name,
+    description,
+    icons,
+  } = props;
 
   const handleOpen = () => {
     setModalOpen(true);
@@ -93,6 +102,13 @@ function ProjectCard(props: Project) {
             </Typography>
 
             <Typography>{about}</Typography>
+            <br />
+            <Typography>
+              {' '}
+              Source code: <Link href={sourceCodeUrl}>
+                {sourceCodeUrl}
+              </Link>{' '}
+            </Typography>
 
             <List subheader={<ListSubheader>Challenges</ListSubheader>}>
               {/* eslint-disable react/no-array-index-key */}
