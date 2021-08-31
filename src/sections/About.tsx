@@ -20,7 +20,7 @@ function About() {
           alt="Vinícius Müller"
         />
         <Typography variant="h1" className={classes.title}>
-          Hello, i&apos;m Vinícius Müller!
+          Hello, I&apos;m Vinícius Müller!
         </Typography>
         <Typography variant="body1" className={classes.caption}>
           Software developer

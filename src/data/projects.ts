@@ -1,4 +1,4 @@
-import { Project } from '@common/Project';
+import { Project } from '@common/types';
 
 // Images
 import stackFetchLanding from '@assets/img/stackfetch_landing.png';
@@ -9,6 +9,35 @@ import minimalPaste from '@assets/img/minimalpaste_landing.png';
 import * as i from '@data/icons';
 
 const projects: Project[] = [
+  {
+    name: 'Djanho',
+    description:
+      'A rust CLI tool to convert VSCode themes to (Neo)Vim colorschemes.',
+    about: 'lorem '.repeat(15),
+    landingImage: '',
+    challenges: ['List item', 'List item', 'List item', 'List item'],
+    icons: [i.rustIcon],
+    sourceCodeUrl: 'https://github.com/arcticlimer/djanho',
+  },
+  {
+    name: 'Isotope',
+    description: 'Work with rust noise functions using Elixir NIFs.',
+    about: 'lorem '.repeat(15),
+    landingImage: '',
+    challenges: ['List item', 'List item', 'List item', 'List item'],
+    icons: [i.elixirIcon, i.rustIcon],
+    sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
+  },
+  {
+    name: 'Puretypist',
+    description:
+      'Simple web typing tutor software written in Javascript and HTML.',
+    about: 'lorem '.repeat(15),
+    landingImage: '',
+    challenges: ['List item', 'List item', 'List item', 'List item'],
+    icons: [i.pythonIcon, i.htmlIcon],
+    sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
+  },
   {
     name: 'This website',
     description:

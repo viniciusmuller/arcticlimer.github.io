@@ -13,6 +13,7 @@ import {
   SiMaterialUi,
   SiPostgresql,
   SiJavascript,
+  SiRust,
   SiElixir,
   SiLinux,
   SiGit,
@@ -45,3 +46,4 @@ export const linuxIcon = { name: 'Linux', icon: SiLinux };
 export const nodeIcon = { name: 'Node.js', icon: IoLogoNodejs };
 export const gitIcon = { name: 'Git', icon: SiGit };
 export const pgIcon = { name: 'PostgreSQL', icon: SiPostgresql };
+export const rustIcon = { name: 'Rust', icon: SiRust };

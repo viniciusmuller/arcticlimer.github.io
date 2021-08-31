@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { IoIosCheckbox, IoIosCheckboxOutline } from 'react-icons/io';
+import { IoIosCheckbox } from 'react-icons/io';
 
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
