@@ -95,13 +95,12 @@ function ProjectCard(props: Project) {
             <Typography>{about}</Typography>
 
             <List subheader={<ListSubheader>Challenges</ListSubheader>}>
-              {challenges.map((challenge) => (
-                // TODO: What to use as a key here?
-                <ListItem>
+              {/* eslint-disable react/no-array-index-key */}
+              {challenges.map((challenge, i) => (
+                <ListItem key={i}>
                   <ListItemIcon>
                     <IoIosCheckbox />
                   </ListItemIcon>
-                  {/* TODO: Shorten left pad here */}
                   <ListItemText style={{ fontSize: 4 }} primary={challenge} />
                 </ListItem>
               ))}
