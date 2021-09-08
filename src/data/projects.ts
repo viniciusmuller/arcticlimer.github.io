@@ -46,6 +46,7 @@ const projects: Project[] = [
     challenges: [
       'Handling the DOM using events',
       'Creating a simple yet useful interface',
+      'Deploying page using GitHub Pages',
     ],
     icons: [i.jsIcon, i.htmlIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/puretypist',
@@ -56,7 +57,7 @@ const projects: Project[] = [
       'My personal website built with React and hosted at GitHub pages.',
     about: 'lorem '.repeat(15),
     landingImage: websiteLanding,
-    challenges: ['List item', 'List item', 'List item'],
+    challenges: ['Deploying page using GitHub Pages'],
     icons: [i.tsIcon, i.reactIcon, i.muiIcon, i.styledComponentsIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/arcticlimer.github.io',
   },
