@@ -17,33 +17,26 @@ import {
   SiElixir,
   SiLinux,
   SiGit,
+  SiC,
 } from 'react-icons/si';
 
-// Languages
-export const tsIcon = { name: 'Typescript', icon: SiTypescript };
-export const jsIcon = { name: 'Javascript', icon: SiJavascript };
-export const elixirIcon = { name: 'Elixir', icon: SiElixir };
-export const pythonIcon = { name: 'Python', icon: SiPython };
-
-export const styledComponentsIcon = {
-  name: 'Styled components',
-  icon: SiStyledComponents,
+export default {
+  tsIcon: { name: 'Typescript', icon: SiTypescript },
+  jsIcon: { name: 'Javascript', icon: SiJavascript },
+  elixirIcon: { name: 'Elixir', icon: SiElixir },
+  pythonIcon: { name: 'Python', icon: SiPython },
+  cIcon: { name: 'C', icon: SiC },
+  styledComponentsIcon: { name: 'Styled components', icon: SiStyledComponents },
+  flaskIcon: { name: 'Flask', icon: SiFlask },
+  htmlIcon: { name: 'HTML5', icon: SiHtml5 },
+  cssIcon: { name: 'CSS3', icon: SiCss3 },
+  bootstrapIcon: { name: 'Bootstrap', icon: SiBootstrap },
+  sassIcon: { name: 'Sass', icon: SiSass },
+  reactIcon: { name: 'React', icon: SiReact },
+  muiIcon: { name: 'Material UI', icon: SiMaterialUi },
+  linuxIcon: { name: 'Linux', icon: SiLinux },
+  nodeIcon: { name: 'Node.js', icon: IoLogoNodejs },
+  pgIcon: { name: 'PostgreSQL', icon: SiPostgresql },
+  rustIcon: { name: 'Rust', icon: SiRust },
+  gitIcon: { name: 'Git', icon: SiGit },
 };
-
-// Backend frameworks
-export const flaskIcon = { name: 'Flask', icon: SiFlask };
-
-// Frontend
-export const htmlIcon = { name: 'HTML5', icon: SiHtml5 };
-export const cssIcon = { name: 'CSS3', icon: SiCss3 };
-export const bootstrapIcon = { name: 'Bootstrap', icon: SiBootstrap };
-export const sassIcon = { name: 'Sass', icon: SiSass };
-export const reactIcon = { name: 'React', icon: SiReact };
-export const muiIcon = { name: 'Material UI', icon: SiMaterialUi };
-
-// Others
-export const linuxIcon = { name: 'Linux', icon: SiLinux };
-export const nodeIcon = { name: 'Node.js', icon: IoLogoNodejs };
-export const gitIcon = { name: 'Git', icon: SiGit };
-export const pgIcon = { name: 'PostgreSQL', icon: SiPostgresql };
-export const rustIcon = { name: 'Rust', icon: SiRust };

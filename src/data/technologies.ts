@@ -1,4 +1,4 @@
-import * as i from '@data/icons';
+import i from '@data/icons';
 
 const technologies = {
   Backend: [i.pythonIcon, i.flaskIcon, i.jsIcon, i.tsIcon, i.elixirIcon],

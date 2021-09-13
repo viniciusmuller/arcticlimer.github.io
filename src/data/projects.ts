@@ -4,17 +4,35 @@ import { Project } from '@common/types';
 import stackFetchLanding from '@assets/img/stackfetch_landing.png';
 import websiteLanding from '@assets/img/website_landing.png';
 import minimalPaste from '@assets/img/minimalpaste_landing.png';
+import pureTypistApp from '@assets/img/puretypist_app.png';
+import djanhoDracula from '@assets/img/djanho_dracula_generated.png';
+import isotopeGeneratedTerrain from '@assets/img/isotope_generated_terrain.png';
 
 // Icons
-import * as i from '@data/icons';
+import i from '@data/icons';
 
 const projects: Project[] = [
+  {
+    name: 'Algorithms-data-structures',
+    description:
+      'Personal implementation of different algorithms and data structures.',
+    about: 'lorem '.repeat(15),
+    landingImage: '',
+    challenges: [
+      'Understanding and implementing different algorithms and data structures',
+      'List item',
+      'List item',
+      'List item',
+    ],
+    icons: [i.cIcon],
+    sourceCodeUrl: 'https://github.com/arcticlimer/algorithms-data-structures',
+  },
   {
     name: 'Djanho',
     description:
       'A Rust CLI tool to convert VSCode themes to (Neo)Vim colorschemes.',
     about: 'lorem '.repeat(15),
-    landingImage: '',
+    landingImage: djanhoDracula,
     challenges: [
       'Creating a command-line interface using clap',
       'Deserializing JSON data with serde',
@@ -26,7 +44,7 @@ const projects: Project[] = [
     name: 'Isotope',
     description: 'Work with Rust noise functions using Elixir NIFs.',
     about: 'lorem '.repeat(15),
-    landingImage: '',
+    landingImage: isotopeGeneratedTerrain,
     challenges: [
       'Writing and building documentation using ExDoc',
       'Publishing a package to hex.pm',
@@ -42,7 +60,7 @@ const projects: Project[] = [
     description:
       'Simple web typing tutor software written in Javascript and HTML.',
     about: 'lorem '.repeat(15),
-    landingImage: '',
+    landingImage: pureTypistApp,
     challenges: [
       'Handling the DOM using events',
       'Creating a simple yet useful interface',
@@ -51,6 +69,23 @@ const projects: Project[] = [
     icons: [i.jsIcon, i.htmlIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/puretypist',
   },
+  // {
+  //   // TODO
+  //   name: 'CatWiki',
+  //   description:
+  //     'A site that displays information and images of different cat breeds.',
+  //   about: 'lorem '.repeat(15),
+  //   landingImage: websiteLanding,
+  //   challenges: ['', '', ''],
+  //   icons: [
+  //     i.elixirIcon,
+  //     i.tsIcon,
+  //     i.reactIcon,
+  //     i.muiIcon,
+  //     i.styledComponentsIcon,
+  //   ],
+  //   sourceCodeUrl: 'https://github.com/arcticlimer/catwiki',
+  // },
   {
     name: 'This website',
     description:
@@ -62,6 +97,7 @@ const projects: Project[] = [
     sourceCodeUrl: 'https://github.com/arcticlimer/arcticlimer.github.io',
   },
   {
+    // TODO: Github Oauth
     name: 'StackFetch',
     description:
       'A platform for users share their technology stack and GitHub profiles with the world.',
@@ -87,7 +123,12 @@ const projects: Project[] = [
       'A minimalist pastebin service using only Python built-in modules.',
     about: 'lorem '.repeat(15),
     landingImage: minimalPaste,
-    challenges: ['List item', 'List item', 'List item', 'List item'],
+    challenges: [
+      'Creating a multithreaded server using Python 3',
+      'Creating functional web application using only python built-in modules',
+      'Managing application data with SQlite',
+      'Writing integration tests',
+    ],
     icons: [i.pythonIcon, i.htmlIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
   },
