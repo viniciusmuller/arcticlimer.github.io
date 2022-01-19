@@ -17,6 +17,13 @@ function NavbarCollapse() {
             {section}
           </Link>
         ))}
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://arcticlimer.github.io/blog"
+        >
+          Blog
+        </Link>
       </div>
     </Wrapper>
   );
