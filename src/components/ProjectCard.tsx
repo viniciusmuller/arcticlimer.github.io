@@ -34,7 +34,6 @@ function ProjectCard(props: Project) {
   }
 
   const {
-    about,
     challenges,
     landingImage,
     sourceCodeUrl,

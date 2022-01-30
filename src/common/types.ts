@@ -13,7 +13,6 @@ export interface Technology {
 export interface Project {
   name: string;
   description: string;
-  about: string;
   landingImage: string;
   challenges: string[];
   icons: Icon[];

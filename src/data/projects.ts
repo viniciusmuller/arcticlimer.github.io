@@ -16,7 +16,6 @@ const projects: Project[] = [
     name: 'Algorithms-data-structures',
     description:
       'Personal implementation of different algorithms and data structures.',
-    about: 'lorem '.repeat(15),
     landingImage: '',
     challenges: [
       'Understanding and implementing different algorithms and data structures',
@@ -28,7 +27,6 @@ const projects: Project[] = [
     name: 'Djanho',
     description:
       'A Rust CLI tool to convert VSCode themes to (Neo)Vim colorschemes.',
-    about: 'lorem '.repeat(15),
     landingImage: djanhoDracula,
     challenges: [
       'Creating a command-line interface using clap',
@@ -40,7 +38,6 @@ const projects: Project[] = [
   {
     name: 'Isotope',
     description: 'Work with Rust noise functions using Elixir NIFs.',
-    about: 'lorem '.repeat(15),
     landingImage: isotopeGeneratedTerrain,
     challenges: [
       'Writing and building documentation using ExDoc',
@@ -56,7 +53,6 @@ const projects: Project[] = [
     name: 'Puretypist',
     description:
       'Simple web typing tutor software written in Javascript and HTML.',
-    about: 'lorem '.repeat(15),
     landingImage: pureTypistApp,
     challenges: [
       'Handling the DOM using events',
@@ -87,7 +83,6 @@ const projects: Project[] = [
     name: 'This website',
     description:
       'My personal website built with React and hosted at GitHub pages.',
-    about: 'lorem '.repeat(15),
     landingImage: websiteLanding,
     challenges: [
       'Deploying page using GitHub Pages',
@@ -102,7 +97,6 @@ const projects: Project[] = [
     name: 'StackFetch',
     description:
       'A platform for users share their technology stack and GitHub profiles with the world.',
-    about: 'lorem '.repeat(15),
     landingImage: stackFetchLanding,
     challenges: [
       'Designing a responsive webpage',
@@ -114,7 +108,6 @@ const projects: Project[] = [
   {
     name: 'FlaskQuotes',
     description: 'A Flask web application for sharing personal quotes.',
-    about: 'lorem '.repeat(15),
     landingImage:
       'https://github.com/arcticlimer/flaskquotes/raw/master/img/main.png',
     challenges: [
@@ -129,7 +122,6 @@ const projects: Project[] = [
     name: 'Minimalpaste',
     description:
       'A minimalist pastebin service using only Python built-in modules.',
-    about: 'lorem '.repeat(15),
     landingImage: minimalPaste,
     challenges: [
       'Creating a multithreaded server using Python 3',

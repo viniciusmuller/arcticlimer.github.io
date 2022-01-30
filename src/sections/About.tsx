@@ -35,10 +35,6 @@ function About() {
           I&apos;m currently mainly interested in Elixir, Test Driven
           Development, Golang, Distributed Systems, Deep Learning and functional
           programming.
-          {/* Lorem ipsum dolor sit */}
-          {/* amet, consectetur adipisicing elit. Dolores numquam itaque eveniet */}
-          {/* perferendis blanditiis vero veritatis quas, magni deleniti ea commodi */}
-          {/* quod aperiam inventore ipsam! */}
         </Typography>
         <a
           href="https://github.com/arcticlimer"
