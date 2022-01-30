@@ -20,9 +20,6 @@ const projects: Project[] = [
     landingImage: '',
     challenges: [
       'Understanding and implementing different algorithms and data structures',
-      'List item',
-      'List item',
-      'List item',
     ],
     icons: [i.cIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/algorithms-data-structures',
@@ -92,7 +89,11 @@ const projects: Project[] = [
       'My personal website built with React and hosted at GitHub pages.',
     about: 'lorem '.repeat(15),
     landingImage: websiteLanding,
-    challenges: ['Deploying page using GitHub Pages'],
+    challenges: [
+      'Deploying page using GitHub Pages',
+      'Designing a responsive and accessible website',
+      'Building a clean and modern user interface using Material UI',
+    ],
     icons: [i.tsIcon, i.reactIcon, i.muiIcon, i.styledComponentsIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/arcticlimer.github.io',
   },
@@ -103,7 +104,10 @@ const projects: Project[] = [
       'A platform for users share their technology stack and GitHub profiles with the world.',
     about: 'lorem '.repeat(15),
     landingImage: stackFetchLanding,
-    challenges: ['List item', 'List item', 'List item', 'List item'],
+    challenges: [
+      'Designing a responsive webpage',
+      'Modelling data using an ORM',
+    ],
     icons: [i.tsIcon, i.pgIcon, i.reactIcon, i.sassIcon, i.muiIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/stackfetch',
   },
@@ -113,7 +117,11 @@ const projects: Project[] = [
     about: 'lorem '.repeat(15),
     landingImage:
       'https://github.com/arcticlimer/flaskquotes/raw/master/img/main.png',
-    challenges: ['List item', 'List item', 'List item', 'List item'],
+    challenges: [
+      'Designing a responsive webpage',
+      'Modelling data using an ORM',
+      'Using the Jinja template engine',
+    ],
     icons: [i.pythonIcon, i.flaskIcon, i.htmlIcon, i.cssIcon, i.bootstrapIcon],
     sourceCodeUrl: 'https://github.com/arcticlimer/flaskquotes',
   },

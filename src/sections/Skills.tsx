@@ -43,18 +43,20 @@ function Skills() {
     <Section id="skills">
       <TextWrapper>
         <Typography variant="h1" className={classes.title}>
-          Technology skills
+          Technical skills
         </Typography>
         <Typography
           variant="subtitle1"
           className={classes.techsParagraph}
           align="justify"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-          voluptatem excepturi, sequi delectus aspernatur perferendis quia harum
-          illo est doloremque? Modi accusamus quas itaque officia quidem
-          voluptates deleniti nesciunt, fugit sequi expedita provident tempora
-          nam dicta, quisquam error saepe praesentium!
+          I really like to use the right tool for the problem that I&apos;m
+          facing. That&apos;s why I usually take a look for better alternatives
+          whenever doing something. Currently, the ones that I&apos;m most used
+          to are Elixir and Phoenix, Rust, Python and Typescript. I really like
+          to learn about new technologies by using them in practical projects.
+          The following lists are not exhaustive and reflects the technologies
+          that I prefer to use on a daily basis.
         </Typography>
       </TextWrapper>
       <TechnologiesWrapper>{renderTechnologies()}</TechnologiesWrapper>

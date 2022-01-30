@@ -101,8 +101,8 @@ function ProjectCard(props: Project) {
               {description}
             </Typography>
 
-            <Typography>{about}</Typography>
-            <br />
+            {/* <Typography>{about}</Typography> */}
+            {/* <br /> */}
             <Typography>
               {' '}
               Source code: <Link href={sourceCodeUrl}>

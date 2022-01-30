@@ -14,11 +14,11 @@ function Contact() {
           Contact
         </Typography>
         <Typography variant="h2" className={classes.contactCaption}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-          molestias!
+          If you got interested by any of my projects or technical skills,
+          let&apos;s get in touch!
         </Typography>
         <Typography variant="caption" className={classes.mail}>
-          <FiMail className={classes.mailSvg} /> vinigm.nho@pm.me
+          <FiMail className={classes.mailSvg} /> vinigm.nho@gmail.com
         </Typography>
       </TextWrapper>
       <UndrawContact className={classes.contactSvg} />

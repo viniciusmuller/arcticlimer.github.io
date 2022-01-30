@@ -1,4 +1,5 @@
 import { IoLogoNodejs } from 'react-icons/io';
+import { FaPhoenixFramework } from 'react-icons/fa';
 
 import {
   SiStyledComponents,
@@ -18,6 +19,8 @@ import {
   SiLinux,
   SiGit,
   SiC,
+  SiNixos,
+  SiDocker,
 } from 'react-icons/si';
 
 export default {
@@ -39,4 +42,7 @@ export default {
   pgIcon: { name: 'PostgreSQL', icon: SiPostgresql },
   rustIcon: { name: 'Rust', icon: SiRust },
   gitIcon: { name: 'Git', icon: SiGit },
+  nixOSIcon: { name: 'Nix/NixOS', icon: SiNixos },
+  dockerIcon: { name: 'Docker', icon: SiDocker },
+  phoenixIcon: { name: 'Phoenix', icon: FaPhoenixFramework },
 };
