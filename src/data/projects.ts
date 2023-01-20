@@ -21,7 +21,8 @@ const projects: Project[] = [
       'Understanding and implementing different algorithms and data structures',
     ],
     icons: [i.cIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/algorithms-data-structures',
+    sourceCodeUrl:
+      'https://github.com/viniciusmuller/algorithms-data-structures',
   },
   {
     name: 'Djanho',
@@ -33,7 +34,7 @@ const projects: Project[] = [
       'Deserializing JSON data with serde',
     ],
     icons: [i.rustIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/djanho',
+    sourceCodeUrl: 'https://github.com/viniciusmuller/djanho',
   },
   {
     name: 'Isotope',
@@ -60,7 +61,7 @@ const projects: Project[] = [
       'Deploying page using GitHub Pages',
     ],
     icons: [i.jsIcon, i.htmlIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/puretypist',
+    sourceCodeUrl: 'https://github.com/viniciusmuller/puretypist',
   },
   // {
   //   // TODO
@@ -77,7 +78,7 @@ const projects: Project[] = [
   //     i.muiIcon,
   //     i.styledComponentsIcon,
   //   ],
-  //   sourceCodeUrl: 'https://github.com/arcticlimer/catwiki',
+  //   sourceCodeUrl: 'https://github.com/viniciusmuller/catwiki',
   // },
   {
     name: 'This website',
@@ -90,33 +91,34 @@ const projects: Project[] = [
       'Building a clean and modern user interface using Material UI',
     ],
     icons: [i.tsIcon, i.reactIcon, i.muiIcon, i.styledComponentsIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/arcticlimer.github.io',
+    sourceCodeUrl: 'https://github.com/viniciusmuller/viniciusmuller.github.io',
   },
   {
     // TODO: Github Oauth
     name: 'StackFetch',
     description:
-      'A platform for users share their technology stack and GitHub profiles with the world.',
+      'A platform for users share their technology stack and GitHub profiles' +
+      'with the world.',
     landingImage: stackFetchLanding,
     challenges: [
       'Designing a responsive webpage',
       'Modelling data using an ORM',
     ],
     icons: [i.tsIcon, i.pgIcon, i.reactIcon, i.sassIcon, i.muiIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/stackfetch',
+    sourceCodeUrl: 'https://github.com/viniciusmuller/stackfetch',
   },
   {
     name: 'FlaskQuotes',
     description: 'A Flask web application for sharing personal quotes.',
     landingImage:
-      'https://github.com/arcticlimer/flaskquotes/raw/master/img/main.png',
+      'https://github.com/viniciusmuller/flaskquotes/raw/master/img/main.png',
     challenges: [
       'Designing a responsive webpage',
       'Modelling data using an ORM',
       'Using the Jinja template engine',
     ],
     icons: [i.pythonIcon, i.flaskIcon, i.htmlIcon, i.cssIcon, i.bootstrapIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/flaskquotes',
+    sourceCodeUrl: 'https://github.com/viniciusmuller/flaskquotes',
   },
   {
     name: 'Minimalpaste',
@@ -130,7 +132,7 @@ const projects: Project[] = [
       'Writing integration tests',
     ],
     icons: [i.pythonIcon, i.htmlIcon],
-    sourceCodeUrl: 'https://github.com/arcticlimer/minimalpaste',
+    sourceCodeUrl: 'https://github.com/viniciusmuller/minimalpaste',
   },
 ];
 

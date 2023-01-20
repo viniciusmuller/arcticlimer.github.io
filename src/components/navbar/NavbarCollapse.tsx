@@ -20,7 +20,7 @@ function NavbarCollapse() {
         <Link
           target="_blank"
           rel="noopener noreferrer"
-          href="https://arcticlimer.github.io/blog"
+          href="https://viniciusmuller.github.io/blog"
         >
           Blog
         </Link>
