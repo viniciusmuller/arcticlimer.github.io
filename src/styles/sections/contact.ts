@@ -9,8 +9,6 @@ export const Section = styled.section`
   justify-content: space-around;
   padding: 0 6vw;
 
-  scroll-snap-align: center;
-
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;

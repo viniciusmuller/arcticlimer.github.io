@@ -11,8 +11,6 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
 
-  scroll-snap-align: center;
-
   @media (max-width: 768px) {
     padding-top: 7rem;
   }

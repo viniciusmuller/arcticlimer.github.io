@@ -7,8 +7,6 @@ export const Section = styled.section`
 
   text-align: center;
 
-  scroll-snap-align: start;
-
   @media (max-width: 600px) {
     margin-top: 4rem;
   }

@@ -1,5 +1,5 @@
 import { IoLogoNodejs } from 'react-icons/io';
-import { FaPhoenixFramework } from 'react-icons/fa';
+import { FaPhoenixFramework, FaAngular } from 'react-icons/fa';
 
 import {
   SiStyledComponents,
@@ -21,7 +21,12 @@ import {
   SiC,
   SiNixos,
   SiDocker,
+  SiCsharp,
+  SiMicrosoftsqlserver,
+  SiDotNet,
 } from 'react-icons/si';
+
+import { DiFsharp } from 'react-icons/di';
 
 export default {
   tsIcon: { name: 'Typescript', icon: SiTypescript },
@@ -45,4 +50,9 @@ export default {
   nixOSIcon: { name: 'Nix/NixOS', icon: SiNixos },
   dockerIcon: { name: 'Docker', icon: SiDocker },
   phoenixIcon: { name: 'Phoenix', icon: FaPhoenixFramework },
+  csharpIcon: { name: 'C#', icon: SiCsharp },
+  fsharpIcon: { name: 'F#', icon: DiFsharp },
+  angularIcon: { name: 'Angular', icon: FaAngular },
+  sqlServerIcon: { name: 'SQL Server', icon: SiMicrosoftsqlserver },
+  dotnetIcon: { name: 'Microsoft .NET', icon: SiDotNet },
 };

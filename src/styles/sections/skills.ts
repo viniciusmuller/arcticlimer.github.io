@@ -7,8 +7,6 @@ export const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
 
-  scroll-snap-align: start;
-
   @media (max-width: 1024px) {
     padding-top: 6rem;
   }
