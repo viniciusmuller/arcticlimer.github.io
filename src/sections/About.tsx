@@ -1,5 +1,5 @@
 import Typography from '@material-ui/core/Typography';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import { ReactComponent as UndrawProgramming } from '@assets/svg/undraw_programming.svg';
 import useStyles, {
@@ -35,14 +35,24 @@ function About() {
           I&apos;m currently mainly interested in Elixir, distributed systems,
           React, F# and functional programming.
         </Typography>
-        <a
-          href="https://github.com/viniciusmuller"
-          target="_blank"
-          rel="noreferrer"
-          title="GitHub profile"
-        >
-          <AiFillGithub className={classes.socialSvg} />
-        </a>
+        <div>
+          <a
+            href="https://github.com/viniciusmuller"
+            target="_blank"
+            rel="noreferrer"
+            title="GitHub profile"
+          >
+            <AiFillGithub className={classes.socialSvg} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vini-g-muller-829a36228/"
+            target="_blank"
+            rel="noreferrer"
+            title="LinkedIn profile"
+          >
+            <AiFillLinkedin className={classes.socialSvg} />
+          </a>
+        </div>
       </TextWrapper>
     </Section>
   );

@@ -52,11 +52,8 @@ function Skills() {
         >
           I really like to use the right tool for the problem that I&apos;m
           facing. Currently, the ones that I&apos;m most used to are Elixir and
-          Phoenix, C#, Angular, React and Typescript. Currently I&apos;m
-          focusing on learning new technologies and delivering real business
-          value with them by using them in practical projects. The following
-          lists are not exhaustive and reflects the some of the technologies
-          that I use.
+          Phoenix, C#, Angular, React and Typescript. The following lists are
+          not exhaustive and reflects the some of the technologies that I use.
         </Typography>
       </TextWrapper>
       <TechnologiesWrapper>{renderTechnologies()}</TechnologiesWrapper>
