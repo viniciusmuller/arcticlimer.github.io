@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.6e74161c.chunk.js",
-    "main.js.map": "/static/js/main.6e74161c.chunk.js.map",
+    "main.js": "/static/js/main.1bf21163.chunk.js",
+    "main.js.map": "/static/js/main.1bf21163.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.01539f98.js",
     "runtime-main.js.map": "/static/js/runtime-main.01539f98.js.map",
-    "static/js/2.a0c4aac0.chunk.js": "/static/js/2.a0c4aac0.chunk.js",
-    "static/js/2.a0c4aac0.chunk.js.map": "/static/js/2.a0c4aac0.chunk.js.map",
+    "static/js/2.cf5ebd55.chunk.js": "/static/js/2.cf5ebd55.chunk.js",
+    "static/js/2.cf5ebd55.chunk.js.map": "/static/js/2.cf5ebd55.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.a0c4aac0.chunk.js.LICENSE.txt": "/static/js/2.a0c4aac0.chunk.js.LICENSE.txt",
+    "static/js/2.cf5ebd55.chunk.js.LICENSE.txt": "/static/js/2.cf5ebd55.chunk.js.LICENSE.txt",
     "static/media/djanho_dracula_generated.08bea20e.png": "/static/media/djanho_dracula_generated.08bea20e.png",
     "static/media/isotope_generated_terrain.d28cc6e2.png": "/static/media/isotope_generated_terrain.d28cc6e2.png",
     "static/media/minimalpaste_landing.640f5daa.png": "/static/media/minimalpaste_landing.640f5daa.png",
@@ -19,7 +19,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.01539f98.js",
-    "static/js/2.a0c4aac0.chunk.js",
-    "static/js/main.6e74161c.chunk.js"
+    "static/js/2.cf5ebd55.chunk.js",
+    "static/js/main.1bf21163.chunk.js"
   ]
 }
