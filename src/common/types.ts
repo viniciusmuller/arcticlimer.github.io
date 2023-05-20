@@ -13,9 +13,6 @@ export interface Technology {
 export interface Project {
   name: string;
   description: string;
-  landingImage: string;
-  challenges: string[];
   icons: Icon[];
-  otherImages?: string[];
-  sourceCodeUrl?: string;
+  sourceCodeUrl: string;
 }

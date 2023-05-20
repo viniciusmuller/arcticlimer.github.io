@@ -17,6 +17,8 @@ export const ProjectsWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0 2vw;
+  gap: 25px;
+  margin-top: 1.5rem;
 `;
 
 const useStyles = makeStyles(() =>

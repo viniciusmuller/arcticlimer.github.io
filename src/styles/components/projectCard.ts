@@ -10,12 +10,11 @@ export const IconsWrapper = styled.div`
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-      marginTop: 50,
       width: 340,
     },
 
-    media: {
-      height: 160,
+    actionArea: {
+      height: '100%',
     },
 
     iconsWrapper: {
